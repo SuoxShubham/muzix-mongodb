@@ -18,6 +18,7 @@ public class trackdb {
             public void run(String... args) throws Exception {
                 trackDAO.save(new Track("aBCd","nice song"));
                 trackDAO.save(new Track("Kolaveri","super song"));
+                trackDAO.save(new Track("Mi gente","nice one"));
             }
         };
     }

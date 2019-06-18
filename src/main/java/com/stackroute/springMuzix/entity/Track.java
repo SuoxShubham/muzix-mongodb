@@ -3,7 +3,7 @@ package com.stackroute.springMuzix.entity;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.*;
+//import javax.persistence.*;
 
 @Document
 public class Track {
@@ -12,7 +12,7 @@ public class Track {
 
 
     //    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Id
+
     private String id;
 
 //    @Column(name = "track_name")
