@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api")
 public class TrackRestController {
@@ -34,8 +35,9 @@ public class TrackRestController {
     @PostMapping("tracks")
     public Track addTrck(@RequestBody Track tr) {
 //        tr.setId(0);
-        trackDAO.insert(tr);
-        return tr;
+        Track _tr=trackDAO.insert(new Track(tr.getTrackName(),tr.getTrackComments()));
+
+        return _tr;
     }
 
     @PutMapping("tracks")

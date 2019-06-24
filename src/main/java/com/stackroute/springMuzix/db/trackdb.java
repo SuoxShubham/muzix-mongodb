@@ -16,9 +16,9 @@ public class trackdb {
         return new CommandLineRunner() {
             @Override
             public void run(String... args) throws Exception {
-                trackDAO.save(new Track("aBCd","nice song"));
-                trackDAO.save(new Track("Kolaveri","super song"));
-                trackDAO.save(new Track("Mi gente","nice one"));
+//                trackDAO.save(new Track("aBCd","nice song"));
+//                trackDAO.save(new Track("Kolaveri","super song"));
+//                trackDAO.save(new Track("Mi gente","nice one"));
             }
         };
     }
